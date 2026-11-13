@@ -8,8 +8,11 @@
 \else
 \set escala 1
 \endif
-SELECT CASE WHEN :escala::integer BETWEEN 1 AND 10 THEN 'OK'
-  ELSE 1/0::text END AS escala_valida;
+SELECT set_config('lab.escala', :'escala', false);
+DO $ BEGIN
+ IF current_setting('lab.escala')::integer NOT BETWEEN 1 AND 10
+ THEN RAISE EXCEPTION 'escala debe estar entre 1 y 10'; END IF;
+END $;
 -- Protege contra recarga accidental sin borrar datos existentes
 DO $$
 BEGIN
