@@ -9,10 +9,10 @@
 \set escala 1
 \endif
 SELECT set_config('lab.escala', :'escala', false);
-DO $ BEGIN
+DO $$ BEGIN
  IF current_setting('lab.escala')::integer NOT BETWEEN 1 AND 10
  THEN RAISE EXCEPTION 'escala debe estar entre 1 y 10'; END IF;
-END $;
+END $$;
 -- Protege contra recarga accidental sin borrar datos existentes
 DO $$
 BEGIN
