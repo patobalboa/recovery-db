@@ -1,8 +1,7 @@
 # Recovery DB | PostgreSQL en AWS Academy
 
-**Asignatura:** Administración de Base de Datos · **Modalidad:** laboratorio individual o en parejas · **Infraestructura:** instancia EC2 de AWS Academy Learner Lab · **Motor:** PostgreSQL · **Enfoque:** SRE/DBA (operación, recovery y performance).
+**Asignatura:** Administración de Base de Datos · **Modalidad:** laboratorio libre de cantidad de grupo con diferencia de calidad · **Infraestructura:** instancia EC2 de AWS Academy Learner Lab · **Motor:** PostgreSQL · **Enfoque:** SRE/DBA (operación, recovery y performance).
 
-> Este repositorio contiene **material para estudiantes, no un solucionario**. Las decisiones de arquitectura, comandos de respaldo/restauración y propuestas de optimización deben ser investigadas, implementadas y justificadas por cada equipo.
 
 ## Caso: «La tienda vuelve a operar»
 
@@ -34,11 +33,10 @@ Una empresa mantiene una base PostgreSQL en EC2. Tras una intervención, se pier
 
 | Ruta | Propósito |
 |---|---|
-| `docs/guia-estudiante.md` | Misión completa y evidencias, sin respuestas |
+| `docs/guia-estudiante.md` | Misión completa y evidencias |
 | `docs/aws-academy.md` | Preparación EC2, seguridad, costos y troubleshooting |
 | `docs/material-estudio.md` | Lecturas y conceptos orientadores |
 | `docs/rubrica.md` | Rúbrica de 100 puntos |
-| `docs/canvas.html` | Página HTML para Canvas LMS |
 | `sql/01_esquema.sql` | Modelo de negocio para el laboratorio |
 | `sql/02_datos.sql` | Población sintética reproducible |
 | `sql/03_consultas.sql` | Consultas base a investigar (no optimizadas) |
